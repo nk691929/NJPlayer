@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/underRecView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#2B4B40"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/icon_small"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/music_icon"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            />
+
+        <TextView
+            android:id="@+id/title_song_small"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/icon_large"
+            android:ellipsize="marquee"
+            android:padding="5dp"
+            android:text="No Music Playing"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            />
+
+
+            <ImageView
+                android:id="@+id/play_pause_small"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/play_button"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

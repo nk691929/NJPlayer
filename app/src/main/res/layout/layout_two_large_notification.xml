@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/underRecView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2B4B40"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/icon_large"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/music_icon"
+            android:layout_margin="5dp"
+            />
+
+        <TextView
+            android:id="@+id/title_song_large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/icon_large"
+            android:ellipsize="marquee"
+            android:padding="5dp"
+            android:text="No Music Playing"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            />
+
+        <ImageView
+            android:id="@+id/logo_large"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/music_icon"
+            android:layout_below="@+id/title_song_large"
+            android:layout_marginStart="15dp"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"/>
+
+        <RelativeLayout
+            android:id="@+id/controlPanelBottom"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo_large"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/previous_large"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/previous_button"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="15dp"/>
+
+            <ImageView
+                android:id="@+id/play_pause_large"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/play_button"
+                android:layout_centerHorizontal="true"/>
+
+            <ImageView
+                android:id="@+id/next_large"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/next_button"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="15dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

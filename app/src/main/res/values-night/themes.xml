@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.NJPlayer" parent="Theme.MaterialComponents.DayNight.Bridge">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#2B4B40</item>
+        <item name="colorPrimaryVariant">#2B4B40</item>
+        <item name="colorOnPrimary">#F31A64</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">#F31A64</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>
